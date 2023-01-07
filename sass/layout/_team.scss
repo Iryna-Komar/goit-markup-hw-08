@@ -1,0 +1,95 @@
+.team {
+    background-color: var(--bg-color-utility);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+
+
+   /* CARD SET */
+
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 30px;
+    background-color: var(--bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+    overflow: hidden;
+
+    &:last-child {
+    margin-bottom: 0px;
+  }
+
+}
+.card__name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+  .card__text {
+    padding: 30px 30px 16px 30px;
+  }
+
+  .card__about {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  .social-network__list {
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-network__item {
+    display: flex;
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-network__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus  {
+      background-color: var(--accent-color);
+    }
+  
+    &:hover .social-network__icon, 
+    &:focus .social-network__icon {
+      fill: var(--bg-color);
+    }
+  
+
+  }
+
+  .social-network__icon {
+    fill: var(--icon-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
