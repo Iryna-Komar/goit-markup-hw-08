@@ -155,4 +155,14 @@
     }
   }
 
+  .portfolio__unit-padding {
+    @media screen and (min-width: 768px) {
+      padding-bottom: 36px;
+  }
+    @media screen and (min-width: 1200px) {
+    padding-bottom: 20px;
+  }
+    
+  }
+
  

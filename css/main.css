@@ -522,7 +522,7 @@ header .container {
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color-utility);
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   border-radius: 4px;
 }
@@ -857,6 +857,17 @@ section.services {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__unit-padding {
+    padding-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__unit-padding {
+    padding-bottom: 20px;
+  }
+}
+
 .footer {
   background-color: var(--main-color);
   padding-top: 60px;
@@ -996,7 +1007,7 @@ section.services {
 }
 
 .subscription__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
@@ -1011,6 +1022,16 @@ section.services {
   .subscription__input {
     width: 358px;
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .subscription__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 786px) {
+  .subscription__input {
+    width: 450px;
   }
 }
 
