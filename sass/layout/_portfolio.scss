@@ -1,6 +1,7 @@
 .filter__item {
     margin-right: 8px;
     margin-bottom: 15px;
+    flex-wrap: nowrap;
 
     &:last-child {
     margin-right: none;
@@ -35,11 +36,28 @@
   }
 
   .filter {
-    width: 400px;
+    // width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 480px) {
+      width: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+      // width: 1200px;
+    }
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+      // width: 768px;
+      
+  }
+  
   }
   .pointer {
     cursor: pointer;
@@ -121,6 +139,20 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  }
+
+  .portfolio__item {
+    @media screen and (max-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
 
  

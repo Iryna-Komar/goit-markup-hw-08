@@ -1,4 +1,17 @@
 
+section.services {
+  margin-top: 0;
+  padding-top: 0;
+
+  @media screen and (max-width: 1200px) {
+    display: none;         
+  }
+
+  // @media screen and (min-width: 480px) {
+  //   display: none;           
+  // }
+
+}
 
   .services-list {
     display: flex;
