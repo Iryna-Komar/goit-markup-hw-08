@@ -9,7 +9,21 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
+
+    @media screen and (min-width: 480px) {
+      
+    }
+
+    @media screen and (min-width: 768px) {
+      gap: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+    
     // align-items: baseline;
+   
   }
 
 .footer__logo {
@@ -28,6 +42,15 @@
 .address {
     min-width: 231px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-right: 70px;
+    }
   }
 
 
@@ -63,6 +86,10 @@
   flex-direction:column;
   align-items: center;
 
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+
 }
 
 .form-title {
@@ -96,16 +123,35 @@
     // align-items: flex-end;
 
     width: 570px;
-    height: 86px;
+    // height: 86px;
+    @media screen and (min-width: 768px) {
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+      align-items: flex-end;
+      flex-direction:row;
+      width: 570px;
+      height: 93px;
+      margin-left: 93px;
+      
+      
+    }
    
 
   }
 
   .subscription__form {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 
+    @media screen and (min-width: 1200px) {
+      flex-direction:column;
+      align-items: flex-start;  
+      
+    }
   }
 
   .subscription__input {
@@ -119,6 +165,12 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     outline: transparent;
     color: var(--bg-color);
+   
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0px;
+    }
   }
 
   .subscription__btn{
@@ -127,7 +179,7 @@
     border: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
     border-radius: 4px;
-    margin-left: 12px;
+    
 
     height: 50px;
     gap: 10px;
@@ -151,6 +203,11 @@
     &:focus {
     background-color: var(--btn-hover);
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+  
 }
   .subscription__icon {
     fill: var(--bg-color);
