@@ -367,8 +367,12 @@ label.modal__politic-label::before {
 }
 
 .main-nav__list {
-  display: flex;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .main-nav__list {
+    display: flex;
+  }
 }
 
 .main-nav__item {
@@ -412,9 +416,20 @@ header .container {
 }
 
 .header-contacts {
-  display: flex;
   display: none;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .header-contacts__link {
@@ -432,6 +447,18 @@ header .container {
 }
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-contacts__item {
@@ -455,10 +482,18 @@ header .container {
   top: 0px;
   left: 0px;
   right: 0px;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu .container {
   flex-direction: column;
   height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .menu-is-hidden {
@@ -471,6 +506,11 @@ header .container {
   background-color: transparent;
   border: 0px;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .menu-close-btn {
