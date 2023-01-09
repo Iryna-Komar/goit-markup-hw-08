@@ -2,25 +2,74 @@
   background-color: var(--main-color);
   text-align: center;
   padding: 200px 0px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-img-mob.jpg);
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-img-mob-2x.jpg);
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 1600px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-img-tab.jpg);
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-img-tab-2x.jpg);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-img-mob.jpg);
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-img-mob-2x.jpg);
+    }
+  }
+
+
 }
 
 .hero__title {
-    width: 700px;
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1,62;
+    
     margin: 0px auto 30px auto;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--bg-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 700px;
+      
+      font-size: 44px;
+      line-height: 1.36;
+    }
+
+    @media screen and (max-width: 479px) {
+      width: 305px;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 1,62;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 360px;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1,62;
+    }
    
   }
 
@@ -49,3 +98,4 @@
     background-color: var(--btn-hover);
   }
 }
+
