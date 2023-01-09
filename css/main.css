@@ -357,6 +357,11 @@ label.modal__politic-label::before {
   line-height: 1.19;
   color: #000000;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 87px;
+  }
+}
 
 .logo__accent {
   color: var(--accent-color);
@@ -423,6 +428,7 @@ header .container {
   .header-contacts {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -476,30 +482,28 @@ header .container {
 
 .mobile-menu {
   position: fixed;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background-color: var(--bg-color);
   top: 0px;
   left: 0px;
   right: 0px;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
-.mobile-menu .container {
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container.is-open .container {
   flex-direction: column;
   height: 100%;
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu {
+  .menu-container.is-open {
     display: none;
   }
-}
-
-.menu-is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 
 .menu-open {
