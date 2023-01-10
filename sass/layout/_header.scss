@@ -38,12 +38,16 @@
     display: flex;
     @media screen and (min-width: 1200px) {
       display: flex;
-      margin-right: 315px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-right: 90px;
     }
 }
    
 .main-nav__list {
     display: none;
+    gap: 50px;
     
 
     @media screen and (min-width: 768px) {
@@ -232,6 +236,7 @@ header .container {
 
 .mob-nav__list {
     margin-bottom: 302px;
+    
   }
 
 .mob-nav__link {

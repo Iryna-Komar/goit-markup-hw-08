@@ -378,12 +378,18 @@ label.modal__politic-label::before {
 @media screen and (min-width: 1200px) {
   .main-nav {
     display: flex;
-    margin-right: 315px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    margin-right: 90px;
   }
 }
 
 .main-nav__list {
   display: none;
+  gap: 50px;
 }
 @media screen and (min-width: 768px) {
   .main-nav__list {
