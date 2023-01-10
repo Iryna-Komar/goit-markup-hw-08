@@ -22,18 +22,26 @@
     }
   }
 
-// .container__nav {
-//   display: flex;
-//   flex-wrap: nowrap;
-//   }
+  // .container__nav {
+  //   @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
    
-  
+  // }
   
 .logo__accent {
     color: var(--accent-color);
   }
 
-
+.main-nav {
+    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-right: 315px;
+    }
+}
+   
 .main-nav__list {
     display: none;
     
@@ -46,7 +54,9 @@
 
 .main-nav__item {
     margin-right: 50px;
-
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
   }
 
 .main-nav__item:last-child {
@@ -105,7 +115,6 @@ header .container {
 
     @media screen and (min-width: 1200px) {
       display: flex;
-      flex-wrap: nowrap;
      
     }
   }
@@ -117,7 +126,6 @@ header .container {
     color: var(--text-color);
 
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -142,7 +150,7 @@ header .container {
 }
   
 .header-contacts__item {
-    margin-right: 30px;
+    margin-right: 50px;
     align-items: center;  
    
   
@@ -162,7 +170,7 @@ header .container {
     transform: translateX(10px);
    }
 
-.mobile-menu {
+  .mobile-menu {
     position: fixed;
     z-index: 1;
     width: 100vw;
@@ -178,18 +186,20 @@ header .container {
 }
 
 
-// .menu-container.is-open {
-//   transform: translateX(0);
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
 
-//     .container {
-//       flex-direction: column;
-//       height: 100%;
-//     }
 
-//     @media screen and (min-width: 768px) {
-//       display: none;
-//     }
-//   }
+  //   .container {
+  //     flex-direction: column;
+  //     height: 100%;
+  //   }
+
+  //   @media screen and (min-width: 768px) {
+  //     display: none;
+  //   }
+  // }
 
 
 .menu-open {
@@ -240,7 +250,6 @@ header .container {
     gap: 10px;
     
   }
-
 .tel-contacts{
   font-size: 34px;  
   padding: 0px;
@@ -253,7 +262,6 @@ line-height: 28px;
 padding: 0px;
 margin-bottom: 64px;
 }
-
 .soc-network-menu__item {
   display: flex;
   align-items: center;

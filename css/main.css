@@ -372,6 +372,16 @@ label.modal__politic-label::before {
   color: var(--accent-color);
 }
 
+.main-nav {
+  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    display: flex;
+    margin-right: 315px;
+  }
+}
+
 .main-nav__list {
   display: none;
 }
@@ -383,6 +393,11 @@ label.modal__politic-label::before {
 
 .main-nav__item {
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .main-nav__item {
+    margin: 0;
+  }
 }
 
 .main-nav__item:last-child {
@@ -434,7 +449,6 @@ header .container {
 @media screen and (min-width: 1200px) {
   .header-contacts {
     display: flex;
-    flex-wrap: nowrap;
   }
 }
 
@@ -444,7 +458,6 @@ header .container {
   letter-spacing: 0.02em;
   color: var(--text-color);
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -469,7 +482,7 @@ header .container {
 }
 
 .header-contacts__item {
-  margin-right: 30px;
+  margin-right: 50px;
   align-items: center;
 }
 .header-contacts__item:last-child {
@@ -496,6 +509,10 @@ header .container {
   right: 0px;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
 }
 
 .menu-open {
