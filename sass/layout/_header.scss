@@ -165,6 +165,10 @@
 
   }
 
+  .mobile-menu.is-open {
+    transform: translateX(10px);
+   }
+
   .mobile-menu {
     position: fixed;
     z-index: 1;
