@@ -21,6 +21,14 @@
 
     }
   }
+
+  .container__nav {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+   
+  }
   
   .logo__accent {
     color: var(--accent-color);
@@ -97,17 +105,17 @@
   .header-contacts {
     display: none;
     margin-left:auto;
-    margin-right: 302px;
+
 
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      margin-left: 96px;
+    
     }
 
     @media screen and (min-width: 1200px) {
       display: flex;
-      margin-left: 315px;
+     
     }
   }
 
