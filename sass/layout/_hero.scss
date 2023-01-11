@@ -50,8 +50,8 @@
     color: var(--bg-color);
 
     @media screen and (min-width: 1200px) {
-      width: 700px;
       
+      width: 696px;
       font-size: 44px;
       line-height: 1.36;
     }
@@ -63,7 +63,7 @@
       line-height: 1,62;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: 360px;
       font-weight: 900;
       font-size: 26px;

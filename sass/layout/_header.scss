@@ -244,10 +244,15 @@ header .container {
 .soc-network-menu {
     display: flex;
     gap: 10px;
+
+    @media screen and (max-width: 479px) {
+      flex-wrap: wrap;
+    }
+    
     
   }
 .tel-contacts{
-  font-size: 34px;  
+  font-size: 28px;  
   padding: 0px;
   margin-bottom: 32px;
 }

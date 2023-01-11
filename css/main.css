@@ -65,7 +65,7 @@ button {
 
 .container {
   min-width: 320px;
-  max-width: 450px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -576,9 +576,14 @@ header .container {
   display: flex;
   gap: 10px;
 }
+@media screen and (max-width: 479px) {
+  .soc-network-menu {
+    flex-wrap: wrap;
+  }
+}
 
 .tel-contacts {
-  font-size: 34px;
+  font-size: 28px;
   padding: 0px;
   margin-bottom: 32px;
 }
@@ -678,7 +683,7 @@ header .container {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 700px;
+    width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -691,7 +696,7 @@ header .container {
     line-height: 1, 62;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__title {
     width: 360px;
     font-weight: 900;
@@ -1274,7 +1279,7 @@ section.services {
 }
 @media screen and (max-width: 767px) {
   .subscription__input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
