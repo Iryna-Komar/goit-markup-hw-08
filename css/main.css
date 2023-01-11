@@ -562,10 +562,6 @@ header .container {
   height: 19px;
 }
 
-.mob-nav__list {
-  margin-bottom: 302px;
-}
-
 .mob-nav__link {
   font-weight: 500;
   font-size: 40px;
@@ -615,7 +611,7 @@ header .container {
 .menu-content {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   justify-content: space-between;
   padding-left: 40px;
   padding-top: 48px;
