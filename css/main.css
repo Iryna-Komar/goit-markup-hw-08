@@ -131,8 +131,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   border-radius: 4px;
   padding: 40px;
   background-color: var(--bg-color);
@@ -140,16 +140,10 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -287,6 +281,8 @@ label.modal__politic-label {
   align-items: center;
   color: var(--text-color);
   cursor: pointer;
+  font-size: 12px;
+  line-height: 1, 17;
 }
 label.modal__politic-label::before {
   content: "";
@@ -298,6 +294,12 @@ label.modal__politic-label::before {
   transition-property: background-color border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  label.modal__politic-label {
+    font-size: 14px;
+    line-height: 1, 17;
+  }
 }
 
 .modal__politic-check:checked + label::before {

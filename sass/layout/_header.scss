@@ -182,7 +182,7 @@ header .container {
     transform: translateX(10px);
    }
 
-  .mobile-menu {
+.mobile-menu {
     position: fixed;
     z-index: 1;
     width: 100vw;
@@ -201,17 +201,6 @@ header .container {
 .mobile-menu.is-open {
   transform: translateX(0);
 }
-
-
-  //   .container {
-  //     flex-direction: column;
-  //     height: 100%;
-  //   }
-
-  //   @media screen and (min-width: 768px) {
-  //     display: none;
-  //   }
-  // }
 
 
 .menu-open {
