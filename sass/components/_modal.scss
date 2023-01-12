@@ -30,6 +30,7 @@
     transform: translate(-50%, -50%) scale(1);
 
     min-height: 609px;
+    width: calc (100wv-80px);
     border-radius: 4px;
     padding: 40px;
 
@@ -45,11 +46,11 @@
       min-height: 581px;
     }
      @media screen and (max-width: 449px) {
-      width: calc (100%-80px);
+      
      
     }
     @media screen and (min-width: 480px) {
-      min-width: 450px;
+      width: 450px;
    
     }
     @media screen and (max-height: 608px) {
