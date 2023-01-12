@@ -29,7 +29,6 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    min-width: 450px;
     min-height: 609px;
     border-radius: 4px;
     padding: 40px;
@@ -45,13 +44,18 @@
       min-width: 528px;
       min-height: 581px;
     }
-    @media screen and (max-height: 608px) {
-      transform: translate(-50%, -25%) scale(1);
-    }
-    @media screen and (max-width: 449px) {
+     @media screen and (max-width: 449px) {
       width: calc (100%-80px);
      
     }
+    @media screen and (min-width: 480px) {
+      min-width: 450px;
+   
+    }
+    @media screen and (max-height: 608px) {
+      transform: translate(-50%, -25%) scale(1);
+    }
+   
   }
 
   .modal__input {
