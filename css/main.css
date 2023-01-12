@@ -125,6 +125,12 @@ button {
   pointer-events: none;
   visibility: hidden;
 }
+@media screen and (max-height: 608px) {
+  .backdrop {
+    visibility: visible;
+    overflow-y: scroll;
+  }
+}
 
 .modal {
   position: absolute;
@@ -149,8 +155,6 @@ button {
 @media screen and (max-height: 608px) {
   .modal {
     transform: translate(-50%, -25%) scale(1);
-    visibility: visible;
-    overflow-y: scroll;
   }
 }
 

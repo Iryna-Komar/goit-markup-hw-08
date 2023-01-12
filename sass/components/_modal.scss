@@ -15,7 +15,12 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    
 
+  }
+  @media screen and (max-height: 608px) {
+    visibility: visible; 
+    overflow-y: scroll;
   }
 }
 .modal {
@@ -42,8 +47,6 @@
     }
     @media screen and (max-height: 608px) {
       transform: translate(-50%, -25%) scale(1);
-      visibility: visible; 
-      overflow-y: scroll;
     }
   }
 
